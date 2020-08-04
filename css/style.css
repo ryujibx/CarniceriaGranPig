@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Novus-Bold;
+    font-size: 1.2rem;
+    line-height: 1.em;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+body::after {
+    background: url(../images/PorkBanner.jpg);
+    background-size: cover;
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+}
+.container{
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container h1{
+    color:#ab1a1a;
+    text-shadow: rgba(0,0,0,1)1px 1px 1px;
+}
+a{
+    text-decoration: none;
+}
+
+/*---------------------header----------------------*/
+.header{
+    background:#ab1a1a;
+    color:#ffffff;
+    padding: 1rem 0;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;   
+    z-index: 1;
+}
+.header a{
+    color:#fff;
+    text-decoration: none
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    margin: 0;
+}
+.logo img{
+    margin: 0;
+    height: 80px;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li {
+    display:inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition:  all 0.2s linear;
+    border-radius: 1px;
+}	
+.navigation ul li a:hover{
+    background:#f7f7ed; 
+    color: #ab1a1a;
+}
+/*---------------------cuerpo----------------------*/
+.banner{
+    padding-top: 7.3rem;
+    padding-bottom: 2rem;
+    margin: 0px;
+}
+.slider{
+    color:#fff;
+    margin: 0px auto;
+    position:static;
+    width: 100%;
+    height: calc(100vh - 118px);
+    background-color:gray;
+    background-size:cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    animation: slider 10s infinite linear;
+    box-shadow: rgba(0,0,0,0.6) 5px 5px 5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    margin-top: 50px;
+    cursor:  pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px;
+    background:#ab1a1a;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    opacity: 0.7;
+}
+.btn:hover{
+    opacity: 1;
+}
+.slider img{
+    width: 500px;
+    margin: 50px
+}
+.columnas{
+    text-align: center;
+    color:#505050;
+    width: 80%;
+    height: 250px;
+    margin: 10px auto;
+    margin-bottom:120px;
+    
+}
+.columnas-centradas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+.columnas h1{
+    color: #404040;
+}
+.columnax2{
+    text-align:justify;
+    margin: auto;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.columnax2 img{
+    width: 400px;
+    padding-left: 60px
+}
+/*************************PRODUCTOS**************************/
+.producto{
+    color:#ab1a1a;
+    background-color: #d9d9d9;
+    width: 70%;
+    max-width: 90%;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0.6em;
+    padding: 10px;
+    margin: 10px auto;
+    text-decoration: none;
+    transition: 0.4s;
+    box-shadow: rgba(0,0,0,0.6) 5px 5px 5px ;
+    text-shadow: rgba(0,0,0,0.6) 2px 2px 2px;
+    opacity: 0.7;
+}
+.producto img{
+    align-self: center;
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+}
+.producto:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+/**************************COMPRA***************************/
+.cont{
+    margin: 0 auto;
+    width: 60%;
+    height: 200px;
+}
+button{
+    color:#fff;
+    background-color: #ab1a1a;
+    padding: 10px;
+    opacity: 0.7;
+    border-radius: 0.3rem;
+}
+button:hover{
+    opacity: 1;
+}
+.cont-compra h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.columna-comp{
+    text-align:justify;
+    margin: auto;
+    float: left;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+#col1{
+     width: 20%;
+}
+#col2{
+     width: 70%;
+}
+.txt{
+    width: 100%;
+}
+/**************************CONTACTO*************************/
+.mapa{
+    width: 404px;
+    height: 304px;
+    max-width: 402px;
+    background: #909090;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+.columnas{
+    margin: 0 auto;
+    width: 90%;
+    height: 350px;
+}
+.columna-contacto{
+    text-align:justify;
+    width: 50%;
+    float: left;
+    padding:20px 20px 20px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.columna-contacto img{
+    width: 20px;    
+}
+.container h1{
+    color:#a61919;
+}
+.columna-contacto h3{
+    color: #a61919;
+}
+.mapa{
+    margin: 0 auto;
+}
+.cont-btn{
+    padding-bottom: 60px;
+    position: fixed;
+    z-index: 0;
+    bottom:0;
+    right:0;
+}
+.cont-btn img{
+    width: 60px;
+    height: 60px;
+}
+/************************info****************************/
+.container-info{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 600px;
+    z-index: 0;
+    border-radius: 0.6rem;
+}
+.container-info::after{
+    opacity: 0.8;
+    background-color: #adadad;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 600px;
+    z-index: -1; 
+    border-radius: 0.6rem;
+}
+.info{
+    margin: 20px auto;
+    width: 90%;
+}
+.info h2{
+    color:#ab1a1a;
+    padding: 30px;
+    text-shadow: rgba(0,0,0,1)1px 1px 1px;
+}
+.info h3{
+    color:#ffffff;
+    text-shadow: rgba(0,0,0,1)1px 1px 1px;
+}
+/************************footer*************************/
+.footer{
+    background-color:#ab1a1a;
+    color:#fff;
+    padding:10px;
+    font-family: Novus-Regular;
+}
+.footer p{
+ font-size:13px;   
+}
+.footer a{
+    text-decoration: none;
+    color:#fff;
+}
+.lin-footer img{
+    width: 20px;
+    height: 20px;
+}
+.derechos{
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.7;
+}
+/*----------------------animacion----------------------*/
+@keyframes slider{
+    0%{
+        background-image: url("../images/tienda_1.jpg")
+    }
+    50%{
+        background-image: url("../images/tienda_1.jpg")
+    }
+    51%{
+        background-image: url("../images/tienda_2.jpg")
+    }
+    100%{
+        background-image: url("../images/tienda_2.jpg")
+    }
+}
